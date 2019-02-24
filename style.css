@@ -23,24 +23,29 @@ header{
 	text-align: center;
 }
 
-#header-center img{
+#header-center {
 	width: 1150px;
-}
+	height: 300px;}
+	#header-center img{
+	    width: 1150px;
+	    height: 300px;}
 
-#header-bottom{
+#header-bottom nav{
 	height:70px;
 	background-color: black;
 	line-height: 70px;
     padding: 0 230px 0 230px;}
-	#header-bottom nav>ul>li{
+	#header-bottom nav>ul{
 	    list-style: none;
-	    display: inline-block; }
+	    display: flex;
+	    justify-content: center; }
 	    #header-bottom ul>li>a{
 	    	text-decoration: none;
 	    	color: white;
 	    	font-size: 20px;
-	    	margin-right: 35px;
-	        margin-left: 35px; }
+	    	display: block;
+	    	text-transform: uppercase;
+	    	padding: 0 20px;}
 	    	#header-bottom ul>li>a:hover{
 	    		color: black;
 	    		background-color: white;
