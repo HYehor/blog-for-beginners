@@ -36,7 +36,7 @@ include('connection.php');
                    {
         		?>
         		<li>
-        			<a href="categories.php?=<?php echo $cat['id'] ?>"> <?php echo $cat['title']; ?> </a>
+        			<a href="categories.php?id=<?php echo $cat['id'] ?>"> <?php echo $cat['title']; ?> </a>
         		</li>
         		<?php
         	       }

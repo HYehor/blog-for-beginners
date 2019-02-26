@@ -6,7 +6,7 @@ include('connection.php');
 <html lang="en">
 <head>
 	<meta charset="UTF-8" http-equiv="Content-Type">
-	<link rel="stylesheet" href="style__.css">
+	<link rel="stylesheet" href="style_about.css">
 	<link rel="shortcut icon" type="image/x-icon" href="icon.ico">
 	<title>Blog for beginners</title>
 </head>

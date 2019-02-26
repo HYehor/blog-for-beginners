@@ -79,16 +79,16 @@ header{
 	float: left;
 	padding: 1px 10px 10px 15px;
 	background-color: gray;
-    width: 675px;}
+    width: 675px;
+    height: auto;}
     .block-left a{
-    	float: right;
     	text-decoration: none;
     	color: black;}
     	.block-contant{
     		padding-top:10px;}
     		.block-left .block-contant .article{
     			background-color: white;
-    		    height: 150px;}
+    		    height:auto;}
 
 .sidebar{
     width: 380px;
