@@ -46,12 +46,15 @@ include('connection.php');
 			}
 			else
 			{
-				$art = mysqli_fetch_assoc($article);
+			$art = mysqli_fetch_assoc($article);
+			//счетчик просмотров
+			mysqli_query($connection, "UPDATE articles SET views = views +1 WHERE id =" . $_GET['id']);
 			?>            
 
 			<div class="block-left">
 				<div>
 				    <h3> <?php echo $art['title']; ?> </h3>
+				    <h4>Views: <?php echo $art['views']; ?> </h4>
 				</div>
 				<div class="block-contant">
 					<div class="block-articles">

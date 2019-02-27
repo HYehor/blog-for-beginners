@@ -16,6 +16,7 @@ include('connection.php');
 		<?php include('header.php'); ?>
 
 		<div class="container">
+
 			<div class="block-left">
 				<div>
 					<a href="all_articles.php">All articles</a>
@@ -25,7 +26,7 @@ include('connection.php');
 					<div class="block-articles">
 
 						<?php
-						$article = mysqli_query($connection, "SELECT * FROM articles ORDER BY id DESC LIMIT 7");						
+						$article = mysqli_query($connection, "SELECT * FROM articles ORDER BY id DESC LIMIT 5");						
 						?>
 						<?php
 						while($art = mysqli_fetch_assoc($article))
@@ -54,8 +55,8 @@ include('connection.php');
 					    }
 						?>
 					</div>
-				</div>
-			</div>
+				</div>					
+		    </div>
 
              <?php include('sidebar.php') ?>
 

@@ -74,19 +74,23 @@ header{
 	margin-top: 10px;
 }
 
+.left-sidebar{
+	float: left;
+}
+
 .block-left{
 	margin-left: 15px;
-	float: left;
 	padding: 1px 15px 10px 15px;
 	background-color: gray;
-    width: 675px;
-    height: auto;}
+    width: 710px;
+    height: auto;
+    float: left;}
     .block-left a{
     	float: right;
     	text-decoration: none;
     	color: black;}
-    	.block-contant{
-    		padding-top:10px;}
+    	.block-left .block-contant{
+    		padding-top:;}
     		.block-left .block-contant .article{
     			background-color: white;
     		    height:150px;
@@ -94,12 +98,14 @@ header{
     		    margin-bottom: 15px;}
     		    .block-left .article-categorie a{
     		    	float: none;}
+    		    	.block-left .article-title a{
+    		    		float: none;}
+
 
 .sidebar{
     width: 380px;
     float: right;}
     .block-right a{
-    	float: right;
     	text-decoration: none;
     	color: black;}
     	.block-right .article-right{
@@ -110,7 +116,7 @@ header{
 	            padding: 1px 15px 10px 15px;
 	            background-color: gray;}
 	            .block-contant{
-	            	margin-bottom: 5px;}     			
+	            	margin-bottom: 15px;}     			
 
 .block-right-comments a{
     	float: right;
@@ -134,10 +140,11 @@ header{
 
 }
 
+
 .article-info .article-title{
-	padding: 10px 10px;}
+	padding: 5px 10px 10px 10px;}
 	.article-info .article-categorie{
-		padding: 10px 10px;}
+		padding: 0 10px 10px 10px;}
 
 .clear{
 	clear: both;
