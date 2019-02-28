@@ -3,7 +3,7 @@
 ?>
 
 <?php
-$article = mysqli_query($connection, "SELECT * FROM articles ORDER BY views DESC LIMIT 3");
+$article = mysqli_query($connection, "SELECT * FROM articles ORDER BY views DESC LIMIT 5");
 $categorie = mysqli_query($connection, "SELECT * FROM categories");
 $cat = mysqli_fetch_assoc($categorie);
 ?>
@@ -33,7 +33,7 @@ $cat = mysqli_fetch_assoc($categorie);
 						?>
 						<div class="article-title">Title: <a href="article.php?id= <?php echo $art['id']; ?>"><?php echo $art['title']; ?> </a> </div>
 						<div class="article-categorie">Categorie: <a href="categories.php?id= <?php echo $art['categorie_id']; ?>"><?php echo $article_categorie['title']; ?> </a> </div>
-						<div class="article-text">Text: <?php echo mb_substr($art['text'], 0, 95, 'utf-8') . "..."; ?></div>
+						<div class="article-text">Text: <?php echo mb_substr($art['text'], 0, 85, 'utf-8') . "..."; ?></div>
 					</div>
 				</div>
 			</div>
