@@ -48,6 +48,7 @@ header{
 	    width: 1150px;
 	    height: 300px;}
 
+
 #header-bottom nav{
 	height:70px;
 	background-color: #6888A1;
@@ -70,8 +71,7 @@ header{
 
 .container{
 	width: 1150px;
-	margin-top: 10px;
-}
+	margin-top: 10px;}
 
 .block-left{
 	margin-left: 15px;
@@ -94,7 +94,6 @@ header{
     width: 380px;
     float: right;}
     .block-right a{
-    	float: right;
     	text-decoration: none;
     	color: black;}
     	.block-right .article-right{
@@ -103,7 +102,8 @@ header{
     		.block-right{
     			margin-right: 15px;
 	            padding: 1px 10px 10px 15px;
-	            background-color: gray;}     			
+	            background-color: gray;}
+
 
 .block-right-comments a{
     	float: right;

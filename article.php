@@ -80,11 +80,11 @@ include('connection.php');
 				</div>
 			</div>
 
+			<?php include('sidebar.php') ?>
+
 			<?php
 		    }
 		    ?>
-
-             <?php include('sidebar.php') ?>
 
 			<div class="clear"></div>	
 		</div>
