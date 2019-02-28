@@ -24,7 +24,7 @@ include('connection.php');
 					<div class="block-articles">
 
 						<?php
-						$article = mysqli_query($connection, "SELECT * FROM articles ORDER BY id DESC LIMIT 8");						
+						$article = mysqli_query($connection, "SELECT * FROM articles ORDER BY id DESC LIMIT 10");						
 						?>
 						<?php
 						while($art = mysqli_fetch_assoc($article))
@@ -34,7 +34,7 @@ include('connection.php');
 						<div class="article">
 							<div class="article-image" style="background-image: url(images/<?php echo $art['image']; ?>)"></div>
 							<div class="article-info">
-								<div class="article-title">Title: <?php echo $art['title']; ?></div>
+								<div class="article-title">Title: <a href="article.php?id=<?php echo $art['id']; ?>"><?php echo $art['title']; ?></a></div>
 								<?php
 								foreach($categories as $cat)
 								{
@@ -45,7 +45,7 @@ include('connection.php');
 								    }
 								}
 								?>
-								<div class="article-categorie">Categorie: <a href="categories.php?=<?php echo $article_categorie['id']; ?>"> <?php echo $article_categorie['title']; ?> </a> </div>
+								<div class="article-categorie">Categorie: <a href="categories.php?id=<?php echo $article_categorie['id']; ?>"> <?php echo $article_categorie['title']; ?> </a> </div>
 								<div class="article-text">Text: <?php echo $art['text']; ?></div>
 							</div>
 						</div>

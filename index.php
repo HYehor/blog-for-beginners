@@ -26,7 +26,7 @@ include('connection.php');
 					<div class="block-articles">
 
 						<?php
-						$article = mysqli_query($connection, "SELECT * FROM articles ORDER BY id DESC LIMIT 5");						
+						$article = mysqli_query($connection, "SELECT * FROM articles ORDER BY id DESC LIMIT 7");						
 						?>
 						<?php
 						while($art = mysqli_fetch_assoc($article))
