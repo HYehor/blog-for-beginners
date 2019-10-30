@@ -74,8 +74,11 @@ header{
 	margin-top: 10px;}
 
 .block-left{
-	margin-left: 15px;
 	float: left;
+}	
+
+.block-left-top{
+	margin-left: 15px;
 	padding: 1px 10px 10px 15px;
 	background-color: gray;
     width: 675px;
@@ -89,6 +92,39 @@ header{
     			background-color: white;
     		    height:auto;}
 
+.block-left-comments{
+	margin-left: 15px;
+	margin-top: 15px;
+	padding: 1px 10px 10px 15px;
+	background-color: gray;
+    width: 675px;
+    height: auto;}
+    .block-left a{
+    	text-decoration: none;
+    	color: black;}
+    	.block-contant{
+    		padding-top:10px;}
+    		.block-left .block-contant .article{
+    			background-color: white;
+    		    height:auto;}
+    		    .block-left-comments .author{
+	            	padding: 10px 0;}
+
+.block-left-form{
+	margin-left: 15px;
+	margin-top: 15px;
+	padding: 1px 10px 10px 15px;
+	background-color: gray;
+    width: 675px;
+    height: auto;}
+    .block-left-form .form .name{
+    	margin: 10px 0 5px 0;
+        width: 335px;}
+    	.block-left-form .form .email{
+    	    margin: 5px 0 10px 0;
+    	    width: 335px;}
+    	    .block-left-form .form textarea{
+	    	    margin-bottom: 10px;}       
 
 .sidebar{
     width: 380px;
@@ -119,17 +155,16 @@ header{
 	            margin-top: 15px;}
 
 .article-image{
+	background-size: cover;
 	width:150px;
 	height:150px;
 	background-color: black;
-    float: left;
-
-}
+    float: left;}
 
 .article-info .article-title{
-	padding: 10px 10px;}
+	padding: 10px 10px 5px 10px;}
 	.article-info .article-categorie{
-		padding: 10px 10px;}
+		padding: 5px 10px 10px 10px;}
 
 .clear{
 	clear: both;
