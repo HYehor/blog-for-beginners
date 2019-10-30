@@ -6,7 +6,7 @@
             </div>
             <nav>
                 <ul>
-                    <li><a href="/"> Main </a></li>
+                    <li><a href="http://github/blog-for-beginners/blog_for_beginners.php"> Main </a></li>
                     <li><a href="pages/about_me.php"> About me </a></li>
                     <li><a href="#"> Contacts </a></li>
                     <li><a href="http://facebook.com" target="_blank"> I in facebook </a></li>
@@ -29,7 +29,7 @@
                    {
                     ?>
                 <li>
-                    <a href="#"> <?php echo $cat['categorie']; ?> </a>
+                    <a href="pages/categories.php?id=<? echo $cat['id']; ?>"> <?php echo $cat['categorie']; ?> </a>
                 </li>
                 <?php
                    }

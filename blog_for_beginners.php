@@ -13,7 +13,7 @@ include_once 'config/db.php';
 <body>
 	<div id="wrapper">
 
-        <? include 'pages/header.php'; ?>
+        <? include_once 'pages/header.php'; ?>
 
 		<div class="container">
 			<div class="left">
