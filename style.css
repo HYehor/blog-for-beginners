@@ -78,28 +78,63 @@ header{
 	float: left;
 }
 
+
+.left{
+	float: left;
+}
+
+
 .block-left{
 	margin-left: 15px;
+	margin-bottom: 15px;
 	padding: 1px 15px 10px 15px;
 	background-color: gray;
     width: 710px;
-    height: auto;
-    float: left;}
+    height: auto;}
     .block-left a{
     	float: right;
     	text-decoration: none;
     	color: black;}
     	.block-left .block-contant{
-    		padding-top:;}
+    		padding-top: 10px;}
     		.block-left .block-contant .article{
     			background-color: white;
-    		    height:150px;
+    		    height:auto;
     		    overflow:hidden;
     		    margin-bottom: 15px;}
     		    .block-left .article-categorie a{
     		    	float: none;}
     		    	.block-left .article-title a{
-    		    		float: none;} 
+    		    		float: none;}
+
+
+
+.block-left-2{
+	margin-left: 15px;
+	margin-bottom: 15px;
+	padding: 1px 15px 10px 15px;
+	background-color: gray;
+	width: 710px;
+	height: auto;
+}
+.block-left-2 a{
+	float: right;
+	text-decoration: none;
+	color: black;}
+.block-left-2 .block-contant{
+	padding-top: 10px;}
+.block-left-2 .block-contant .article{
+	background-color: white;
+	height: auto;
+	overflow:hidden;
+	margin-bottom: 15px;}
+.block-left-2 .article-categorie a{
+	float: none;}
+.block-left-2 .article-title a{
+	float: none;}
+.block-left-2 .block-contant .block-articles .article .article-image{
+	background-image: url("images/bolt.jpg");
+}
 
 
 .sidebar{
@@ -116,7 +151,7 @@ header{
 	            padding: 1px 15px 10px 15px;
 	            background-color: gray;}
 	            .block-contant{
-	            	margin-bottom: 15px;}     			
+	            	margin-bottom: 15px;}
 
 .block-right-comments a{
     	float: right;
@@ -166,4 +201,8 @@ header{
 						text-transform: uppercase;}
 						#footer nav>ul>li>a:hover{
 							color: #6888A1;
-							text-decoration: underline;}		
+							text-decoration: underline;}
+
+.container .article-views{
+	float: right;
+}
