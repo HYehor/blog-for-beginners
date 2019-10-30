@@ -13,7 +13,7 @@ include_once '../config/db.php';
 <body>
 <div id="wrapper">
 
-    <? include 'header.php'; ?>
+    <? include_once 'header.php'; ?>
     <?php
        $article = mysqli_query($connection, "SELECT * FROM `articles` WHERE `id` =" . $_GET['id']);
        if(mysqli_num_rows($article) <= 0)
@@ -152,8 +152,8 @@ include_once '../config/db.php';
                                     if(empty($errors))
                                     {
                                         //добавить комментарий
-                                        $res = mysqli_query($connection, "INSERT INTO `comments`(`author`, `password`, `email`, `text`)
-                                                                                 VALUES ('')");
+                                        $res = mysqli_query($connection, "INSERT INTO `comments`(`author`, `password`, `email`, `text`, `pubdate`, `articles_id`)
+                                               VALUES ('".$_POST['name']."', '".md5($_POST['passsword'])."', '".$_POST['email']."', '".$_POST['text']."', NOW(), '".$art['id']."' )" );
                                         echo '<span style="color: green; font-weight: bold;">' . 'Comment is added!' . '</span>' . '<br>';
                                     }else
                                     {
@@ -166,9 +166,9 @@ include_once '../config/db.php';
                             <input type="text" name="name" placeholder="your name" value="<?php echo $_POST['name'];?>">
                             <input type="password" name="password" placeholder="your password" value="">
                             <input type="email" name="email" placeholder="your email" value="<?php echo $_POST['email'];?>"> <br> <br>
-                            <textarea name="text" cols="75" rows="5" placeholder="your text">
-                            </textarea> <br> <br>
+                            <textarea name="text" cols="75" rows="5" placeholder="your text"> </textarea> <br> <br>
                             <input type="submit" name="submit" value="Add comment">
+                            <button type="reset">Reset</button>
                         </form>
                     </div>
                 </div>
